@@ -13,12 +13,11 @@ const AboutMe = () => {
                 </p>
             </div>
             <p className="text-xl mt-20">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio dolor, ut esse sapiente odit nemo officiis nobis ea at impedit debitis repudiandae! Consequatur exercitationem animi, aperiam ad nihil, voluptates sit impedit saepe quod sapiente repudiandae reiciendis blanditiis similique, neque nemo nisi officiis inventore ipsa. Hic ipsam eveniet expedita corrupti iusto!            
-            </p>
+
+            As a Full Stack Developer, I excel in designing, developing, and managing innovative technology solutions tailored to solve complex business problems. My expertise spans a broad range of technologies including JavaScript for dynamic applications, React Native for cross-platform mobile development, and Tailwind CSS for crafting modern, responsive websites. I am skilled in leveraging Firebase for robust backend solutions, managing data with MySQL, and creating compelling graphics with Canva and Figma. My proficiency with Git ensures efficient version control and collaboration.  </p>
         <br />
         <p className="text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, inventore, qui quaerat autem aliquam quos expedita reprehenderit et quam culpa iusto harum quas praesentium cupiditate dicta eius necessitatibus sit ipsum nulla molestiae, numquam ullam? Dicta eligendi dolor mollitia amet assumenda unde aperiam ipsa fuga. Perspiciatis, illum at! Quaerat, aspernatur aliquam!
-        </p>
+        With a degree that fosters a strong problem-solving mindset, I am adept at integrating technology to drive meaningful results, continuously innovate, and adapt to the latest industry trends. My commitment to excellence and passion for technology enable me to deliver high-impact solutions that align with strategic business goals.        </p>
         </div>
 
         

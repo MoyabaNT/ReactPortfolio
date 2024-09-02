@@ -1,12 +1,13 @@
 import React from 'react'
 import html from '../assets/html.png'
-import css from '../assets/css.png'
+import Figma from '../assets/figma.png'
 import GitHub from '../assets/github.png'
 import Nextjs from '../assets/nextjs.png'
 import Tailwind from '../assets/tailwind.png'
 import JavaScript from '../assets/javascript.png'
 import REactimage from '../assets/react.png'
-import graphql from '../assets/graphql.png'
+import Firebase from '../assets/firebase.png'
+import Canva from '../assets/canva.png'
 
 const MyExperience = () => {
   const techs=[
@@ -14,49 +15,55 @@ const MyExperience = () => {
       id: 1,
       src:html,
       title: 'HTML',
-      style: 'shadow-orange-500'
+      style: 'shadow-orange-500 text-white'
     },
      {
       id: 2,
-      src:css,
-      title: 'CSS',
-      style: 'shadow-blue-500'
+      src:JavaScript,
+      title: 'JavaScript',
+      style: 'shadow-yellow-400 text-white'
     }, 
     {
       id: 3,
-      src:JavaScript,
-      title: 'JavaScript',
-      style: 'shadow-yellow-400'
+      src: REactimage,
+      title: 'React',
+      style: 'shadow-blue-600 text-white'
     },
      {
       id: 4,
-      src: REactimage,
-      title: 'REact',
-      style: 'shadow-blue-600'
+      src:Tailwind,
+      title: 'Tailwind',
+      style: 'shadow-sky-400 text-white'
     }, 
     {
       id: 5,
-      src:Tailwind,
-      title: 'Tailwind',
-      style: 'shadow-sky-400'
+      src:Nextjs,
+      title: 'Next JS',
+      style: 'shadow-white text-white'
     }, 
        {
       id: 6,
-      src:Nextjs,
-      title: 'Next JS',
-      style: 'shadow-white'
+      src:GitHub,
+      title: 'GitHub',
+      style: 'shadow-gray-400 text-white'
     },   
      {
       id: 7,
-      src:GitHub,
-      title: 'GitHub',
-      style: 'shadow-gray-400'
+      src:Firebase,
+      title: 'Firebase',
+      style: 'shadow-amber-400 text-white'
     },
     {
       id: 8,
-      src:graphql,
-      title: 'graphql',
-      style: 'shadow-pink-400'
+      src:Figma,
+      title: 'Figma',
+      style: 'shadow-purple-400 text-white'
+    },  
+      {
+      id: 9,
+      src:Canva,
+      title: 'Canva',
+      style: 'shadow-blue-300 text-white'
     },
     
   ]
