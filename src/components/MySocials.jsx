@@ -40,7 +40,7 @@ const MySocials = () => {
                     Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: '/Reflection Journal ETS3A 2024 1.docx',
+            href: '/Nthabiseng Moyaba.pdf',
             style: 'rounded-br-md',
             download: true,
         },
