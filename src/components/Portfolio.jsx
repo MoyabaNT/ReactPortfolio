@@ -1,20 +1,20 @@
 import React from 'react'
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg'
+import logodesign from '../assets/portfolio/MyLogo.png'
 import installNode from '../assets/portfolio/installNode.jpg'
 import navbar from '../assets/portfolio/navbar.jpg'
-import reactParallax from '../assets/portfolio/reactParallax.jpg'
+import PLogo from '../assets/portfolio/PLogo.png'
 import reactSmooth from '../assets/portfolio/reactSmooth.jpg'
-import reactWeather from '../assets/portfolio/reactWeather.jpg'
+import NthabiiLogo from '../assets/portfolio/NthabiiLogo.png'
 
 const Portfolio = () => {
     const portfolo = [
         {
             id: 1,
-            src: arrayDestruct
+            src: logodesign
         },
         {
             id: 2,
-            src: reactParallax
+            src: PLogo
         },
         {
             id: 3,
@@ -30,7 +30,7 @@ const Portfolio = () => {
         },
         {
             id: 6,
-            src: reactWeather
+            src: NthabiiLogo
         }
     ]
   return (
