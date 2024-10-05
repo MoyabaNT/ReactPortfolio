@@ -28,7 +28,7 @@ const MyExperience = () => {
         <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">Experience</p>
         <p className="py-6 text-lg">These are my technologies</p>
       </div>
-      <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-4 sm:px-12">
+      <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-4 sm:px-12 text-white">
         {techs.map(({ id, src, title, style }) => (
           <div
             key={id}
