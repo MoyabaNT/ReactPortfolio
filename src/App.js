@@ -5,6 +5,7 @@ import MySocials from "./components/MySocials";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import ContactMeHere from "./components/ContactMeHere";
+import ProjectExperience from "./components/ProjectExperience";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Home />
       <MySocials />
       <AboutMe />
+      <ProjectExperience />
       <Portfolio />
       <MyExperience />
       <ContactMeHere />

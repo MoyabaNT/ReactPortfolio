@@ -13,19 +13,24 @@ const NavBar = () => {
     {
       id: 2,
       link: 'about'
-    },   
+    }, 
     {
       id: 3,
+      link: 'projects'
+    },  
+    {
+      id: 4,
       link: 'portfolio'
     },   
     {
-      id: 4,
-      link: 'experience'
+      id: 5,
+      link: 'technologies'
     },
     {
-      id: 5,
+      id: 6,
       link: 'contact'
-    }
+    },
+
   ]
   return (
     <div className="flex justify-between items-center w-full h-20
