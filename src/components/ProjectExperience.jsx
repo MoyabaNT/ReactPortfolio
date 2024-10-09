@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import JavaScript from '../assets/Logins.png';
-import home from '../assets/home.png';
-import again from '../assets/homeagain.png';
-import full from '../assets/fullnhalf.png';
+import first from '../assets/pay.png';
+import second from '../assets/quote.png';
+import third from '../assets/reque.png';
+import forth from '../assets/side.png';
+import fifth from '../assets/view.png';
+import six from '../assets/direct.png';
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -14,7 +16,7 @@ const ProjectExperience = () => {
   const myprojects = [
     {
       id: 1,
-      images: [JavaScript, home, again, full], // Array of images for each project
+      images: [forth, second, third, first, fifth, six], // Array of images for each project
       title: 'Pack It Buddy',
       message: 'Final year project ~ Find the project here 👌 : https://github.com/MoyabaNT/Systematic-Six-Final-Sprint/tree/main ...Pack It Buddy addresses a significant gap in the moving industry by providing a platform that connects customers with trustworthy moving services, particularly for those in rural areas who are often overlooked. The industry has yet to tap into the potential of offering reliable packing assistance, leaving many customers uncertain about which companies to trust. Our solution bridges this gap by offering a seamless, transparent platform that caters to all customers, including those in temporary housing such as renters in business hubs. Pack It Buddy delivers a user-centric, efficient service that ensures forwarders and customers are easily connected.',
     },
