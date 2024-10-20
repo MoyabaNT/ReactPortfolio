@@ -13,7 +13,7 @@ const AboutMe = () => {
           </p>
         </div>
         <p className="text-base sm:text-lg md:text-xl mt-10 sm:mt-20">
-          As a Full Stack Developer, I excel in designing, developing, and managing innovative technology solutions tailored to solve complex business problems. My expertise spans a broad range of technologies including JavaScript for dynamic applications, React Native for cross-platform mobile development, and Tailwind CSS for crafting modern, responsive websites. I am skilled in leveraging Firebase for robust backend solutions, managing data with MySQL, and creating compelling graphics with Canva and Figma. My proficiency with Git ensures efficient version control and collaboration.
+          As a Front-End Developer, I excel in designing, developing, and managing innovative technology solutions tailored to solve complex business problems. My expertise spans a broad range of technologies including JavaScript for dynamic applications, React Native for cross-platform mobile development, and Tailwind CSS for crafting modern, responsive websites. I am skilled in leveraging Firebase for robust backend solutions, managing data with MySQL, and creating compelling graphics with Canva and Figma. My proficiency with Git ensures efficient version control and collaboration.
         </p>
         <br />
         <p className="text-base sm:text-lg md:text-xl">
