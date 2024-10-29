@@ -40,7 +40,7 @@ const MySocials = () => {
                     Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: '/Nthabiseng Moyaba.pdf',
+            href: '/myResume.pdf',
             style: 'rounded-bl-md lg:rounded-br-md',
             download: true,
         },
