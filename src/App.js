@@ -21,9 +21,6 @@ function App() {
       <MyExperience />
       <ContactMeHere />
       <BrowserRouter>
-      <Routes>
-        <Route index="/home" element={<Home/>} />
-      </Routes>
 
       </BrowserRouter>
     </div>
