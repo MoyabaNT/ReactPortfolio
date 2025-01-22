@@ -6,7 +6,7 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import ContactMeHere from "./components/ContactMeHere";
 import ProjectExperience from "./components/ProjectExperience";
-import { Route, BrowserRouter, Routes} from "react-router-dom";
+import {  BrowserRouter} from "react-router-dom";
 
 
 function App() {
