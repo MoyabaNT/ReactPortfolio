@@ -5,50 +5,67 @@ import third from '../assets/reque.png';
 import forth from '../assets/side.png';
 import fifth from '../assets/view.png';
 import six from '../assets/direct.png';
+import num1 from '../assets/ThinkFriday/num1.png';
+import num2 from '../assets/ThinkFriday/num2.png';
+import num3 from '../assets/ThinkFriday/num3.png';
+import num4 from '../assets/ThinkFriday/num4.png';
+import num5 from '../assets/ThinkFriday/num5.png';
+import num6 from '../assets/ThinkFriday/num6.png';
+
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
 const ProjectExperience = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [showSlideshow, setShowSlideshow] = useState(false); // New state for slideshow
+  const [showSlideshow, setShowSlideshow] = useState(false);
 
   const myprojects = [
     {
       id: 1,
-      images: [forth, second, third, first, fifth, six], // Array of images for each project
+      images: [forth, second, third, first, fifth, six],
       title: 'Pack It Buddy',
       message: 'Final year project ~ Find the project here 👌 : https://github.com/MoyabaNT/Systematic-Six-Final-Sprint/tree/main ...Pack It Buddy addresses a significant gap in the moving industry by providing a platform that connects customers with trustworthy moving services, particularly for those in rural areas who are often overlooked. The industry has yet to tap into the potential of offering reliable packing assistance, leaving many customers uncertain about which companies to trust. Our solution bridges this gap by offering a seamless, transparent platform that caters to all customers, including those in temporary housing such as renters in business hubs. Pack It Buddy delivers a user-centric, efficient service that ensures forwarders and customers are easily connected.',
+    },
+    {
+      id: 2,
+      images: [num1, num2, num3, num4, num5, num6],
+      title: 'ThinkFriday',
+      message: 'ThinkFriday is a collaborative project showcasing innovative ideas and teamwork.',
     },
   ];
 
   const handleViewClick = (id) => {
     setSelectedProject(id);
-    setCurrentImageIndex(0); // Start the slideshow from the first image
-    setShowSlideshow(false); // Show the message first
+    setCurrentImageIndex(0);
+    setShowSlideshow(false);
   };
 
   const handleStartSlideshow = () => {
-    setShowSlideshow(true); // Start showing the slideshow
+    setShowSlideshow(true);
   };
 
   const handleCloseClick = () => {
     setSelectedProject(null);
-    setCurrentImageIndex(0); // Reset to the first image
-    setShowSlideshow(false); // Reset slideshow view
+    setCurrentImageIndex(0);
+    setShowSlideshow(false);
   };
 
   const handleNextClick = () => {
+    const project = myprojects.find((project) => project.id === selectedProject);
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === myprojects[0].images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === project.images.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const handlePrevClick = () => {
+    const project = myprojects.find((project) => project.id === selectedProject);
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? myprojects[0].images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? project.images.length - 1 : prevIndex - 1
     );
   };
+
+  const selectedProjectData = myprojects.find((project) => project.id === selectedProject);
 
   return (
     <div
@@ -62,7 +79,7 @@ const ProjectExperience = () => {
         <p className="py-6 text-lg">These are the projects I have worked on</p>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-4 sm:px-12 text-white">
-          {myprojects.map(({ id, title }) => (
+          {myprojects.map(({ id, title, images }) => (
             <div
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-4 rounded-lg ${
@@ -70,7 +87,7 @@ const ProjectExperience = () => {
               }`}
             >
               <img
-                src={myprojects[0].images[0]} // Display the first image as thumbnail
+                src={images[0]} // Display the first image as thumbnail
                 alt={title}
                 className="w-44 mx-auto"
               />
@@ -87,14 +104,13 @@ const ProjectExperience = () => {
           ))}
         </div>
 
-        {selectedProject && (
+        {selectedProjectData && (
           <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center">
             <div className="relative text-center">
               {!showSlideshow ? (
                 <div>
-                  {/* Display the message first */}
                   <p className="bg-gradient-to-b from-black via-slate-950 to-black text-white p-4 rounded-lg">
-                    {myprojects[0].message}
+                    {selectedProjectData.message}
                   </p>
                   <button
                     onClick={handleStartSlideshow}
@@ -106,9 +122,9 @@ const ProjectExperience = () => {
               ) : (
                 <div>
                   <img
-                    src={myprojects[0].images[currentImageIndex]} // Display the current image in the slideshow
+                    src={selectedProjectData.images[currentImageIndex]} // Display the current image in the slideshow
                     alt="Enlarged"
-                    className="w-3/4 h-auto ml-44 sm:ml-24"
+                    className="w-3/4 h-auto mx-auto"
                   />
                   <button
                     onClick={handleCloseClick}

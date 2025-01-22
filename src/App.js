@@ -6,6 +6,8 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import ContactMeHere from "./components/ContactMeHere";
 import ProjectExperience from "./components/ProjectExperience";
+import { Route, BrowserRouter, Routes} from "react-router-dom";
+
 
 function App() {
   return (
@@ -18,6 +20,12 @@ function App() {
       <Portfolio />
       <MyExperience />
       <ContactMeHere />
+      <BrowserRouter>
+      <Routes>
+        <Route index="/home" element={<Home/>} />
+      </Routes>
+
+      </BrowserRouter>
     </div>
   );
 }
